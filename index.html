@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Loja Virtual</title>
+        <meta charset="utf-8"/>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+        <h1>Loja virtual</h1>
+        <style>
+
+            *{
+                font-family: 'Lato', sans-serif;
+                font-weight: bold;
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            h1 {
+                background-color: rgb(128, 76, 74);
+                color: white;
+                padding-left: 30px;
+                padding-top: 30px;
+            
+            }
+            #produtos{
+                max-width: 900px;
+                margin: 0 auto;
+                padding: 0 2%;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            #carrinho {
+                max-width: 900px;
+                margin: 0 auto;
+                padding: 0 2%;
+                display: block;
+            }
+
+            .produto-single{
+                width: 32%;
+                margin-right: 1%;
+                border: 1px solid #ccc;
+                margin-top: 20px;
+                margin-bottom: 20px;
+               
+            }
+
+            .produto-single img {
+                max-width: 100%;
+                
+            }
+
+            .produto-single p {
+                text-align: center;
+                font-size: 16px;
+                padding: 10px;
+            }
+
+            .produto-single a {
+                text-decoration: none;
+                color: white;
+                background-color: rgb(66, 133, 58);
+                text-align: center;
+                display: block;
+                padding: 10px 0;
+                font-size: 18px;
+                font-weight: bold;
+            }
+
+            h2 {
+                background-color: rgb(151, 101, 98);
+                padding: 10px 0;
+                text-align: center;
+                color: white;
+            }
+
+            .info-single-checkout{
+                border-bottom: 2px dotted;
+                padding: 10px 0;
+
+            }
+
+            @media screen and (max-width: 768px){
+                .produto-single{
+                    width: 100%;
+                    margin-right: 0;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <h2>Vitrine</h2>
+
+        <div id="produtos">
+
+        </div><!--produtos-->
+
+        <h2>Carrinho</h2>
+        
+        <div id="carrinho">
+
+        </div><!--carrinho-->
+
+        <script src="script.js">
+
+        </script>
+    </body>
+</html>
+
